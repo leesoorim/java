@@ -7,6 +7,7 @@ import java.util.Scanner;
 
 public class StudentAdmin1 {
 	
+	// 맴버변수, 클래스(전역)변수
 	public static String filePath = "C:\\mytemp\\student_info.txt";
 
 	public static void main(String[] args) {
@@ -44,7 +45,7 @@ public class StudentAdmin1 {
 			FileReader file = new FileReader(filePath); // 경로인식
 			BufferedReader buffer = new BufferedReader(file);	//  파일을 엶
 			int rowNumber=0;
-			while(true) {
+			while(true) {	// 무한루프 상태
 				rowNumber++;
 				String str = buffer.readLine();
 				if(str==null) break;
@@ -68,7 +69,7 @@ public class StudentAdmin1 {
 				String str = buffer.readLine();
 				if(str==null) break;
 				String[] array = str.split(":");
-				System.out.println(rowNumber+"."+array[0]);
+				System.out.println(rowNumber+"."+array[0]+"("+array[1]+")");
 			}
 		}catch(Exception e) {
 			System.out.println("경로를 다시 확인해주세요.");
