@@ -16,6 +16,10 @@ public class MapTest1 {
 		map1.put(2, 30);
 		map1.put(3, 40);
 		map1.put(4, 50);
+		
+		
+		
+		//System.out.println(map1);
 		// 특정 위치 데이터 삭제와 다른 위치 데이터의 키값은 무관
 		System.out.println(map1.get(1));
 		System.out.println(map1.get(2));
