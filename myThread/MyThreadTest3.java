@@ -1,5 +1,9 @@
 package myThread;
 
+/**
+ *  멀티 스레드 - 동시실행
+ */
+
 public class MyThreadTest3 extends Thread{
 
 	public void run() {
