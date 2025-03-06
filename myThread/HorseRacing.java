@@ -11,9 +11,10 @@ class Player extends Thread{
 	}
 	public void run() {
 		int cnt = 0;
-		int lastCnt = 200;
+		int lastCnt = 350;
 		while(cnt < lastCnt) {
 			cnt += 5;	// cnt -> 0,5.10,~
+			System.out.print("-");
 			try {
 				Thread.sleep(100); // 0.1초
 			}catch(Exception e) {
@@ -54,10 +55,5 @@ public class HorseRacing {
 		p4.start();
 		p5.start();
 		p6.start();
-		
-		
-		
-		
 	}
-
 }
